@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.seperation {
+  border: 3px solid rgb(54, 54, 54);
+}
+
+/* Main */
+.main {
+  background-image: url(assets/banner.jpg);
+  background-position: center;
+  background-size: max(1200px, 100vw);
+  background-repeat: no-repeat;
+  height: 644px;
+  position: relative;
+}
+
+.box {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 644px;
+}
+
+/* Nav */
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80vw;
+  margin: auto;
+  height: 100px;
+  position: relative;
+  z-index: 2;
+}
+
+.nav img {
+  width: 190px;
+}
+
+.buttons {
+  display: flex;
+  column-gap: 10px;
+}
+
+.select {
+  width: 140px;
+  background-color: #161313;
+  border: 1px solid #616060;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.select:hover {
+  background-color: red;
+}
+
+.select i {
+  font-size: 16px;
+  color: white;
+  margin-left: 5px;
+}
+
+.select select {
+  font-size: 16px;
+  width: 65%;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.select select option {
+  color: black;
+}
+
+.btn {
+  width: 130px;
+  padding: 8px 8px;
+  background-color: #161313;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #616060;
+  border-radius: 30px;
+  transition: all 0.4s;
+}
+
+.btn:hover {
+  background-color: red;
+}
+
+.btn-red {
+  background-color: #ffffff;
+  color: black;
+}
+
+.btn-red:hover {
+  background-color: #bcb9b8;
+}
+
+/* Welcome */
+
+.welcome {
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+  z-index: 2;
+  height: calc(100% - 100px);
+  text-align: center;
+}
+
+.welcome-title {
+  font-size: 56px;
+  font-weight: bolder;
+}
+
+.welcome-desc {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.welcome-bottom {
+  font-size: 18px;
+}
+
+.welcome-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-buttons input {
+  width: 380px;
+  padding: 18px;
+  font-size: 12px;
+  background-color: #484745;
+  border: 1px solid #747474;
+  border-radius: 30px;
+  outline: none;
+  color: white;
+}
+
+.welcome-buttons input::placeholder {
+  color: #c6c5c5;
+  font-size: 17px;
+}
+
+.welcome-buttons button {
+  padding: 8px 24px;
+  font-size: 18px;
+}
+
+.welcome-buttons .btn-start {
+  width: 170px;
+  padding: 11px;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.4s;
+}
+
+.welcome-buttons .btn-start:hover {
+  background-color: #c11119;
+}
+
+/* info-area */
+
+.info-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70vw;
+  margin: auto;
+}
+
+.image-area {
+  position: relative;
+}
+
+.image-area img {
+  width: 545px;
+  position: relative;
+  z-index: 3;
+}
+
+.image-area video {
+  position: absolute;
+  top: 75px;
+  right: 50px;
+}
+
+.text-area h1 {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.text-area p {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+/* FAQ */
+
+.faq {
+  padding: 20px;
+}
+
+.faq h2 {
+  font-size: 48px;
+  text-align: center;
+}
+
+.faqbox {
+  padding: 24px;
+  margin: 10px auto;
+  background-color: #272727;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 20px;
+  max-width: 80vw;
+  transition: 0.3s;
+}
+
+.faqbox:hover {
+  background-color: #3f3f3f;
+}
+
+.faq-bottom {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 15px;
+  margin-bottom: 30px;
+}
+
+/* Footer */
+
+.footer {
+  max-width: 80vw;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.footer .questions {
+  padding: 34px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-container .footer-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container .footer-item a {
+  color: #b7b7b7;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.net-turkey {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.net-turkey .select {
+  padding: 8px;
+}
+
+.net-turkey p {
+  color: #b7b7b7;
+}
+
+@media (max-width: 1100px) {
+  .welcome .welcome-title {
+    font-size: 45px;
+  }
+
+  .welcome .welcome-desc {
+    font-size: 22px;
+  }
+
+  .welcome .welcome-bottom {
+    font-size: 15px;
+  }
+
+  .info-area {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .info-area h1 {
+    margin: 25px auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .welcome .welcome-title {
+    font-size: 35px;
+  }
+
+  .welcome .welcome-desc {
+    font-size: 17px;
+  }
+
+  .welcome .welcome-bottom {
+    font-size: 12px;
+  }
+
+  .info-area h1 {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+
+  .info-area p {
+    font-size: 20px;
+  }
+  .image-area {
+    overflow: hidden;
+    position: relative;
+  }
+  .image-area img {
+    width: 100%;
+  }
+
+  .image-area video {
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .nav {
+    margin-right: 100px;
+  }
+
+  .welcome .welcome-title {
+    font-size: 30px;
+  }
+
+  .welcome .welcome-desc {
+    font-size: 15px;
+  }
+
+  .welcome .welcome-bottom {
+    font-size: 10px;
+  }
+
+  .welcome-buttons input {
+    width: 200px;
+  }
+
+  .welcome-buttons input::placeholder {
+    font-size: 14px;
+  }
+
+  .welcome-buttons .btn-start {
+    font-size: 14px;
+    padding: 17px;
+  }
+
+  .footer-container {
+    gap: 15px;
+  }
+}
